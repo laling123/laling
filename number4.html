@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Active Learning</title>
+    <style>
+        /* General Styles */
+        body {
+            background-image: url(https://images.squarespace-cdn.com/content/v1/57a4e7f31b631b7ed8f8a4d0/1470440757638-RMNI8SJLQLOH0EXEXACZ/Rattan-Misc.jpg?format=2500w);
+            background-position: center;
+            background-size: cover;
+             \font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: lightyellow;
+        }
+        
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin: 40px auto;
+            width: 80%;
+            text-align: center;
+        }
+        
+        h1, h2 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h1 {
+            font-size: 45px;
+            text-transform: uppercase;
+            border-bottom: 3px solid gold;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 40px;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: justify;
+            line-height: 1.8;
+            padding: 10px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .column {
+            flex: 1;
+            max-width: 45%;
+            transition: transform 0.3s;
+        }
+
+        .column:hover {
+            transform: scale(1.05);
+        }
+
+        .column img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn {
+            background-color: khaki;
+            color: black;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        
+        .btn:hover {
+            background-color: gold;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.8);
+            color: black;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        header .logo h1 {
+            font-size: 30px;
+            margin: 0;
+            color: black;
+        }
+        
+        header nav a {
+            color: black;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        
+        header nav a:hover {
+            color: dark khakhi;
+            text-decoration: underline;
+        }
+
+        .details {
+            display: none;
+            text-align: left;
+            margin-top: 20px;
+            background: LemonChiffon;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function toggleDetails() {
+            var details = document.getElementById("details");
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo"><h1 style="text-shadow: 2px 2px blue";>THE ACTIVE LEARNING</h1></div>
+        <nav>
+            <a href="number4.html">Home</a>
+            <a href="number3.html">Members</a>
+            <a href="number2.html">Topic</a>
+            <a href="number1.html">Application</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>NATIONAL MARTIAL ARTS AND SPORT IN THE PHILIPPINES: ARNIS</h1>
+        <div class="section prayer">
+            <h2><i>What is Arnis?</i></h2>
+            <p>
+                Arnis, also known as <b>Eskrima or Kali</b>, is the national martial art and sport of the Philippines. It is a weapon-based fighting system that
+                primarily focuses on stick fighting but also includes techniques for bladed weapons, empty-hand combat, joint locks, 
+                grappling, and self-defense. Arnis has been practiced for centuries and was originally used by early Filipino warriors for self-defense and tribal warfare.
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="https://storage.googleapis.com/cebuinsights-assets/2022/03/0e20b4a6-doce-pares-23.webp" alt="Arnis Image 1">
+				<a href="https://www.youtube.com/watch?v=s25Yi6pZnMs">i want you by SB19</a>
+            </div>
+            <div class="column">
+                <img src="https://storage.googleapis.com/cebuinsights-assets/2022/03/46408543-doce-pares-58.webp" alt="Arnis Image 2">
+            </div>
+        </div>
+        <a href="#" class="btn" onclick="toggleDetails()">Learn More</a>
+
+        <div id="details" class="details">
+            <h2>Main Goal of Arnis</h2>
+            <p>Arnis is not just a sport but also an essential part of Filipino culture and history. It has influenced many forms of martial arts worldwide and is practiced globally. The training enhances physical fitness, discipline, and self-defense skills.</p>
+            <p>Many schools in the Philippines incorporate Arnis in their physical education curriculum, ensuring that younger generations appreciate and uphold this tradition.</p>
+        </div>
+		

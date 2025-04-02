@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Active Learning</title>
+	<!-- Import Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  
+    <style>
+        /* General Styles */
+        body {
+            background-image: url(https://images.squarespace-cdn.com/content/v1/57a4e7f31b631b7ed8f8a4d0/1470440757638-RMNI8SJLQLOH0EXEXACZ/Rattan-Misc.jpg?format=2500w);
+            background-position: center;
+            background-size: cover;
+            font-family: 'Lora', serif;
+            margin: 0;
+            padding: 0;
+            color: lightyellow;
+        }
+
+    .container {
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        margin: 40px auto;
+        width: 80%;
+        text-align: center;
+    }
+    
+    h1, h2 {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    h1 {
+        font-size: 45px;
+        text-transform: uppercase;
+        border-bottom: 3px solid gold;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+    
+    h2 {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        text-align: justify;
+        line-height: 1.8;
+        padding: 10px;
+    }
+
+    .assessment-info h2 {
+        color: Goldenrod;
+        font-size: 22px;
+    }
+
+    .assessment-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .assessment-list li {
+        background: linear-gradient(Gold, Lemonchiffon, Goldenrod);
+        color: black;
+        padding: 10px;
+        margin: 8px 0;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+	.column {
+            flex: 1;
+            max-width: 45%;
+            transition: transform 0.3s;
+	}
+
+    .assessment-list li:hover {
+    background: linear-gradient(45deg, #F0E68C, #FFD700, #FFFACD); /* Another gradient using the same colors in a different order */
+
+    }
+
+    .answer {
+        display: none;
+        background-color: Moccasin;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        font-size: 16px;
+        color: black;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+        background: rgba(255, 255, 255, 0.8);
+        color: black;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    header .logo h1 {
+        font-size: 28px;
+        margin: 0;
+        color: black;
+    }
+    
+    header nav a {
+        color: black;
+        margin: 0 15px;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s;
+    }
+    
+    header nav a:hover {
+        text-decoration: underline;
+        color: #FFD700;
+    }
+  </style>
+  
+  <script>
+    function toggleAnswer(id) {
+        var answer = document.getElementById(id);
+        answer.style.display = answer.style.display === "none" ? "block" : "none";
+    }
+  </script>
+
+</head>
+<body>
+
+<header>
+    <div class="logo"><h1>THE ACTIVE LEARNING</h1></div>
+    <nav>
+        <a href="number4.html">Home</a>
+        <a href="number3.html">Assessment</a>
+        <a href="number2.html">Topic</a>
+        <a href="number1.html">Application</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Arnis Assessment</h1>
+    <div class="assessment-info">
+        <h2>Assessment Questions</h2>
+        <p>Click on a question to reveal the answer:</p>
+    </div>
+
+    <ol class="assessment-list">
+        <li onclick="toggleAnswer('q1')">What is the national sport of the Philippines?</li>
+        <div id="q1" class="answer">Answer: Arnis</div>
+        <li onclick="toggleAnswer('q2')">What are the two main types of Arnis?</li>
+        <div id="q2" class="answer">Answer: Modern Arnis and Classical Arnis</div>
+        <li onclick="toggleAnswer('q3')">Name three basic stances used in Arnis.</li>
+        <div id="q3" class="answer">Answer: Forward stance, Back stance, Horse stance</div>
+        <li onclick="toggleAnswer('q4')">How many basic strikes are there in Arnis?</li>
+        <div id="q4" class="answer">Answer: 12 basic strikes</div>
+        <li onclick="toggleAnswer('q5')">What is the primary weapon used in Arnis?</li>
+        <div id="q5" class="answer">Answer: Rattan sticks</div>
+        <li onclick="toggleAnswer('q6')">What is the purpose of blocking in Arnis?</li>
+        <div id="q6" class="answer">Answer: To defend against an attack</div>
+        <li onclick="toggleAnswer('q7')">What is "Sinawali" in Arnis?</li>
+        <div id="q7" class="answer">Answer: A pattern-based drill that enhances coordination</div>
+        <li onclick="toggleAnswer('q8')">Why is footwork important in Arnis?</li>
+        <div id="q8" class="answer">Answer: It helps in mobility and positioning</div>
+        <li onclick="toggleAnswer('q9')">What is the difference between offensive and defensive techniques in Arnis?</li>
+        <div id="q9" class="answer">Answer: Offensive techniques focus on attacking, while defensive techniques focus on blocking and evading</div>
+        <li onclick="toggleAnswer('q10')">How does Arnis help in self-defense?</li>
+        <div id="q10" class="answer">Answer: It teaches weapon handling, blocking, and counter-attacks</div>
+    </ol>
+</div>
+
+</body>
+</html>
